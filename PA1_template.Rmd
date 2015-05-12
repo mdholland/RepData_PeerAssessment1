@@ -133,7 +133,7 @@ imputedDailySteps <- aggregate(steps ~ date, data=imputedActivity, sum)
 imputedMeanDailySteps <- mean(imputedDailySteps$steps)
 imputedMedianDailySteps <- median(imputedDailySteps$steps)
 # plot the histogram
-hist(dailySteps$steps, col="slateGray", 
+hist(imputedDailySteps$steps, col="slateGray", 
      main="Histogram of Daily Steps, Imputed Data", 
      xlab="Steps per Day")
 abline(v=imputedMeanDailySteps, col="blue", lwd=lwd)
