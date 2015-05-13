@@ -121,7 +121,7 @@ print(numMissing <- length(missingRecords))
 ## [1] 2304
 ```
 
-There are 2304 missing 5-minute intervals in the dataset. 
+There are 2304 missing 5-minute intervals in the dataset. There are 288 5-minute intervals in a day, so let's how much data we're missing in days:
 
 
 ```r

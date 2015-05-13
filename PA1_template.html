@@ -125,7 +125,7 @@ plot(steps ~ time, data=intervalSteps, type=&quot;l&quot;,
 <pre class="r"><code>missingRecords &lt;- which(is.na(activity$steps))
 print(numMissing &lt;- length(missingRecords))</code></pre>
 <pre><code>## [1] 2304</code></pre>
-<p>There are 2304 missing 5-minute intervals in the dataset.</p>
+<p>There are 2304 missing 5-minute intervals in the dataset. There are 288 5-minute intervals in a day, so let’s how much data we’re missing in days:</p>
 <pre class="r"><code>numMissing/288</code></pre>
 <pre><code>## [1] 8</code></pre>
 <p>This is the equivalent of 8 days of data. As it turns out, we are missing exactly 8 days of data:</p>
